@@ -2,6 +2,8 @@
 
 # Triple Twenty — Support & User Guide
 
+Submit issues here if you find any bugs.  Thanks!
+
 Triple Twenty is a darts score tracker designed for every game night. Whether you're playing solo against a bot, passing the phone with friends, or competing head-to-head over Wi-Fi or Game Center, Triple Twenty keeps score so you can focus on the board.
 
 ---
