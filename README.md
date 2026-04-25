@@ -2,9 +2,7 @@
 
 # Triple Twenty — Support & User Guide
 
-Submit issues here if you find any bugs.  Thanks!
-
-Triple Twenty is a darts score tracker designed for every game night. Whether you're playing solo against a bot, passing the phone with friends, or competing head-to-head over Wi-Fi or Game Center, Triple Twenty keeps score so you can focus on the board.
+Triple Twenty is a darts score tracker designed for every game night. Whether you're playing solo against a bot, passing the phone with friends, competing head-to-head over Wi-Fi, or playing turn-by-turn through Game Center, Triple Twenty keeps score so you can focus on the board.
 
 ---
 
@@ -59,7 +57,7 @@ Play with 2–4 players on a single device. Pass the phone between turns. Suppor
 Play solo against a computer opponent. Available in local mode for all game modes.
 
 **Difficulty levels:**
-- **Beginner** — The bot misses often and makes basic decisions
+- **Beginner** — The bot misses very frequently, ideal for new players learning the game
 - **Easy** — The bot misses frequently and makes basic decisions
 - **Medium** — A balanced challenge for casual players
 - **Hard** — The bot plays strategically with higher accuracy
@@ -81,16 +79,31 @@ Play head-to-head with another device on the same Wi-Fi network. One player crea
 
 **Reconnection:** If the connection drops during a nearby match, the guest will automatically attempt to reconnect. The host continues to listen for the guest. Both players' progress is preserved.
 
-### Game Center
-Play online with friends or random opponents through Apple's Game Center. Both players must be signed into Game Center on their devices.
+### Game Center (Async)
+Play turn-by-turn with friends or random opponents through Apple's Game Center. Both players must be signed into Game Center on their devices. Take turns at your own pace — you'll receive a notification when it's your turn.
 
 **To start a Game Center match:**
-1. Select "Game Center" as the play mode
-2. Enter your name and tap "Find Match"
-3. The Game Center matchmaker will find an opponent
-4. The game starts automatically once both players are connected
+1. Select "Game Center (Async)" as the play mode
+2. Enter your name and tap "New Async Match"
+3. Invite a friend or start a match with a random opponent
+4. Play your first turn — your opponent will be notified
 
-**Note:** Game Center matches are live sessions — both players must stay connected for the duration of the match. If either player disconnects, the match cannot be resumed.
+**To view and resume active matches:**
+1. Tap "View Active Matches" on the setup screen
+2. Your matches are listed with turn status (your turn or waiting)
+3. Tap a match to continue playing
+
+**How it works:**
+- After you complete your turn, the board locks and shows "Waiting for opponent's turn"
+- When your opponent takes their turn, you'll receive a push notification
+- The board unlocks automatically when it's your turn again
+- You can pause and return to any active match at any time
+
+**Score corrections in async:** You can edit your own past turns from the match history panel. Corrections are synced to your opponent's device automatically. You cannot edit your opponent's turns.
+
+**Quitting a match:** Swipe left on a match in the Active Matches list to quit. Your opponent will be notified that you left. Completed matches are automatically removed from the list.
+
+**Note:** Game Center must be set up on your device. If it's not configured, the async options will be disabled with a message to sign in via Settings.
 
 ---
 
@@ -117,6 +130,16 @@ The running total for your turn is displayed alongside the dart badges. If your 
 ### Round the Board
 Uses the same number board as countdown modes. Tap the number you hit — only hits on your current target will advance your position.
 
+### Score Corrections
+Made a mistake? You can edit past turns from the match history panel.
+
+- **Open history:** Tap the history icon during a match
+- **Edit a turn:** Tap a turn to view its darts, then tap a dart to remove it
+- **Delete a turn:** Tap a turn, then tap "Delete Turn" to remove the entire turn
+- **Async restriction:** In Game Center async matches, you can only edit your own turns — not your opponent's
+
+All corrections recalculate the game state automatically.
+
 ---
 
 ## Features
@@ -133,18 +156,24 @@ Turn announcements speak the next player's name at each turn change. Useful for 
 **Bot matches:** Voice announcements are automatically silenced during bot matches since it's a single-player experience.
 
 ### Match History
-View all completed matches with results, scores, and dates. Access from the home screen via the "History" button.
+View all completed matches with results, scores, and dates. Access from the home screen via the "History" button. Game Center async matches are saved to your history when they complete.
 
 ### Player Stats
 Track your performance across all matches. View per-player statistics from the "Player Stats" button on the home screen.
 
 ### Achievements
-Earn achievements as you play. View your progress from the "Achievements" button on the home screen.
+Earn achievements as you play. View your progress by tapping the trophy icon in the top-left corner of the home screen. Achievements are synced with Game Center when signed in.
+
+### Win Screen Animation
+When a player wins, a dart flies across the screen and strikes a bullseye target on the trophy — with confetti to celebrate the victory.
 
 ### Resume Match
 If you leave a local or nearby match in progress, you can resume it from the home screen. The "Resume Match" button appears when a saved match is available.
 
-**Note:** Game Center matches cannot be resumed — they must be completed in a single session.
+**Game Center async matches:** You can pause and return to async matches at any time from the "View Active Matches" screen. Your progress is saved on Apple's servers.
+
+### Version Info
+The current app version and build number are displayed at the bottom of the Settings screen.
 
 ---
 
@@ -177,6 +206,16 @@ To restore a previous purchase, go to Settings → Restore Purchases.
 - Check your internet connection
 - Try restarting the Game Center matchmaker
 
+### Game Center async — turn not updating
+- The opponent's turn may take a moment to propagate through Apple's servers
+- Pull down to refresh on the Active Matches screen
+- Make sure push notifications are enabled for the app
+- Try closing and reopening the match
+
+### Game Center async — stuck matches
+- Swipe left on the match and tap "Quit" to leave it
+- If the match keeps reappearing, the quit will process on the next server sync
+
 ### Voice announcements not playing
 - Make sure announcements are enabled in Settings → Turn Announcements
 - Check that your device is not in silent mode
@@ -193,6 +232,8 @@ If you need help or want to report a bug, reach out via email:
 
 **support@tripletwenty.app**
 
+Visit us at [tripletwenty.app](https://tripletwenty.app)
+
 We'd love to hear your feedback — if you enjoy Triple Twenty, please leave a review on the App Store!
 
 ---
@@ -200,4 +241,3 @@ We'd love to hear your feedback — if you enjoy Triple Twenty, please leave a r
 ## Privacy
 
 Triple Twenty does not collect, store, or share any personal data. All match data is stored locally on your device. Game Center features use Apple's infrastructure — refer to Apple's privacy policy for details on Game Center data handling.
-
